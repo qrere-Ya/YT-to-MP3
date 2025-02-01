@@ -1,11 +1,12 @@
 # YT to MP3
 
-YT to MP3 是一個簡單易用的工具，能夠將 YouTube 影片轉換為 MP3 音訊檔案，適用於個人備份與離線收聽。
+YT to MP3 是一款基於 Tkinter 的桌面應用程式，能夠將 YouTube 影片轉換為 MP3 音訊檔案，適用於個人備份與離線收聽。
 
 ## 功能特色
+- 使用 Tkinter 圖形化界面，簡單易用
 - 下載 YouTube 影片並轉換為 MP3
 - 支援高品質音訊輸出
-- 簡單易用的指令列介面
+- 進度條顯示下載進度
 - 依賴 `yt-dlp` 進行下載與轉換
 
 ## 安裝方式
@@ -14,6 +15,8 @@ YT to MP3 是一個簡單易用的工具，能夠將 YouTube 影片轉換為 MP3
 - Python 3.x
 - `yt-dlp` 套件
 - `ffmpeg` (用於音訊轉換)
+- `tkinter` (Python 內建 GUI 框架)
+- `PyQt5` (用於圖示顯示)
 
 ### 安裝步驟
 1. 克隆此專案
@@ -27,21 +30,20 @@ YT to MP3 是一個簡單易用的工具，能夠將 YouTube 影片轉換為 MP3
    ```
 
 ## 使用方式
-### 指令列使用
-執行以下指令來下載並轉換 YouTube 影片為 MP3：
+### 執行應用程式
+執行以下指令來啟動 GUI 介面：
 ```bash
-python yt_to_mp3.py <YouTube 影片網址>
-```
-例如：
-```bash
-python yt_to_mp3.py https://www.youtube.com/watch?v=dQw4w9WgXcQ
+python main.py
 ```
 
-### 下載後的檔案位置
-轉換後的 MP3 檔案將儲存在 `output/` 資料夾內。
+### 下載 MP3
+1. 開啟應用程式後，在輸入框內輸入 YouTube 影片網址。
+2. 點擊 `Download MP3` 按鈕。
+3. 選擇下載目標資料夾。
+4. 下載完成後，MP3 檔案將儲存在指定資料夾內。
 
 ## 注意事項
-- 本專案僅供個人備份與學習使用，請勿用於非法下載或侵害版權。
+- 本專案是我紀錄學習成果所製作出來的發布地方。
 - 若遇到 `ffmpeg` 錯誤，請確認已正確安裝並設置於系統 PATH。
 
 ## 貢獻方式
