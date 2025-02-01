@@ -48,7 +48,3 @@ python main.py
 
 ## 貢獻方式
 如果您有任何改進建議或發現錯誤，歡迎提交 Pull Request 或回報 Issue。
-
-## 授權條款
-本專案遵循 MIT 授權條款，詳見 [LICENSE](LICENSE) 檔案。
-
